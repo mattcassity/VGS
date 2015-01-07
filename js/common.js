@@ -90,14 +90,14 @@ jQuery(document).ready(function($) {
 				var target = $(obj).parent();
 				if($(target).next().hasClass('fancybox-html')) {
 					if ($(target).next().length && $(obj).attr('rel')) {
-						return  '<span id="fancybox-title-over">' + '<div class="fancybox-num"> Image:'+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+($(target).next().html()) + '</span>';
+						return  '<span id="fancybox-title-over">' + '<div class="fancybox-num">'+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+($(target).next().html()) + '</span>';
 					} else {
 						return  '<span id="fancybox-title-over">' + ($(target).next().html()) + '</span>';
 					}
 				} else if($(obj).attr('rel') && $(obj).attr('title')) {
-					return  '<span id="fancybox-title-over">' + '<div class="fancybox-num"> Image:'+ (currentIndex + 1) + ' / ' + currentArray.length + '</div> '+ (title.length?''+title:'') + '</span>';
+					return  '<span id="fancybox-title-over">' + '<div class="fancybox-num"> '+ (currentIndex + 1) + ' / ' + currentArray.length + '</div> '+ (title.length?''+title:'') + '</span>';
 				} else if($(obj).attr('rel')) {
-					return  '<span id="fancybox-title-over">' + '<div class="fancybox-num" style="margin-bottom:0px"> Image:'+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+'</span>';
+					return  '<span id="fancybox-title-over">' + '<div class="fancybox-num" style="margin-bottom:0px"> '+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+'</span>';
 				} else if($(obj).attr('title')) {
 					return  '<span id="fancybox-title-over">' +(title.length ?''+title :'') + '</span>';
 				} else {
@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
 				
 				if($(target).next().hasClass('fancybox-html')) {
 					if ($(target).next().length && $(obj).attr('rel')) {
-						return  '<span id="fancybox-title-over">' + '<div class="fancybox-num"> Image:'+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+($(target).next().html()) + '</span>';
+						return  '<span id="fancybox-title-over">' + '<div class="fancybox-num">  '+(currentIndex + 1) + ' / ' + currentArray.length+'</div>'+($(target).next().html()) + '</span>';
 					} else {
 						return  '<span id="fancybox-title-over">' + ($(target).next().html()) + '</span>';
 					}
@@ -373,7 +373,7 @@ jQuery(window).load(function() {
 	});
 });
 
-/* Portfolio Filter */
+/* Portfolio Filter 
 jQuery(function($) {
 	$('.portfolio-filter-wrapper a').click(function() {
 		if(navigator.userAgent.match(/Android/i) || 
@@ -408,7 +408,7 @@ jQuery(function($) {
 		}
 		return false;
 	});
-});
+}); */
 
 /* Add rel attribute to link in WP Galleries */
 jQuery(document).ready(function($) {

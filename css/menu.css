@@ -1,0 +1,106 @@
+
+.cbp-spmenu {
+	position: fixed;
+ }
+
+ .gradient {
+  background: -webkit-linear-gradient(#fff, #f1f1f1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #f1f1f1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff, #f1f1f1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #f1f1f1); /* Standard syntax */
+}
+
+.drawer {
+	padding: 0 1.5em ;
+}
+
+.cbp-spmenu h4 { 
+	text-align: center; 
+	margin-top: .8em; 
+}
+
+.cbp-spmenu h3 { 
+	font-size: 2.5em;
+ 	font-weight: 300;
+	text-align: center;
+	cursor: pointer;
+	padding: 3px;
+	background-color: #fff;
+}
+
+.cbp-spmenu p {
+ 	margin: 0; 
+ }
+
+ .cbp-spmenu .center {
+ 	text-align: center;
+ }
+
+.cbp-spmenu a {
+	display: block;
+	color: #777777;
+ }
+
+.cbp-spmenu a:hover {
+	color: #000;
+ }
+
+.cbp-spmenu a:active {
+ 	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+ 
+}
+ 
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+ 
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+ 
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* info button span */
+.left {
+	float: left;
+  }
+
+/* portfolio pages left side description */
+.description-left-menu {
+	width: 90%; 
+}
+ 
+
